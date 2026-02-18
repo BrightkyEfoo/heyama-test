@@ -1,5 +1,5 @@
-const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:3000";
-const MINIO_URL = process.env.EXPO_PUBLIC_MINIO_URL || "http://localhost:9000";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://api.heyama-test.brightkyefoo.cm";
+const MINIO_URL = process.env.EXPO_PUBLIC_MINIO_URL || "https://storage.heyama-test.brightkyefoo.cm";
 
 export function getImageUrl(path: string) {
   return `${MINIO_URL}${path}`;
